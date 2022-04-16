@@ -6,7 +6,7 @@ dic = {}
 
 def Inicia_Nova_Nota():
     global escre_nota, nota 
-    nota = open('Projeto-supermercado/env/bin/files/nota.csv','r+',encoding='utf-8',newline='')  
+    nota = open('Projeto-supermercado/env/bin/files/nota.csv','w+',encoding='utf-8',newline='')  
     nota.truncate(0)
     nome_campos = ['Produto','Valor']
     escre_nota = csv.DictWriter(nota, fieldnames = nome_campos)
